@@ -1,0 +1,11 @@
+opencv-python
+numpy
+pandas
+pyyaml
+scipy
+scikit-learn
+statsmodels
+matplotlib
+ultralytics
+streamlit
+tabulate

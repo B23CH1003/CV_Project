@@ -1,0 +1,15 @@
+rice
+pasta
+potato
+vegetables
+salad
+beans
+soup
+bread
+fruit
+dessert
+cheese
+eggs
+chicken
+meat
+fish

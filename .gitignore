@@ -1,0 +1,21 @@
+# big / rebuildable data (rebuild with the commands in README.md)
+*.zip
+yolo_ds/
+food_ds/
+dataset/before/
+dataset/labels/
+dataset/plates/
+dataset/empty/
+dataset/generated/after/
+dataset/generated/after_labels/
+dataset/generated/preview.jpg
+runs/
+runs_seg/
+results/*/
+!results/report/
+yolov8n-seg.pt
+# system / python junk
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

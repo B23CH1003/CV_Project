@@ -1,0 +1,60 @@
+# patterns.yaml - public canteen dataset (Piccoli et al. 2025), 15 dish classes
+# Menu rule: non-veg (chicken, meat, fish, eggs) and cheese (paneer-like) only at dinner.
+seed: 42
+weeks: 4
+start_date: 2026-10-05    # a Monday
+plates_per_slot: [9, 13]  # 21 slots a week -> about 960 plates in 4 weeks
+minutes_range: [0, 120]
+strict_menu: true         # a photo is served only if ALL its dishes are on that slot's menu
+
+# How much of a dish a student normally leaves (no pattern). Each row:
+# [probability, low %, high %]. Half finish it, some leave a bit, some leave half,
+# a few leave almost all.
+base_waste_mixture:
+  - [0.50, 0, 5]
+  - [0.30, 5, 20]
+  - [0.15, 20, 50]
+  - [0.05, 50, 95]
+appetite_sd: 4            # some students leave a bit more (or less) of everything
+noise_sd: 2
+high_threshold: 30
+
+lighting:                 # only a label: the generator keeps food colours natural
+  breakfast: daylight
+  lunch: daylight
+  dinner: evening
+
+patterns:
+  - type: chronic          # fish is only served Friday dinner, always heavily left
+    dish: fish
+    weekday: Friday
+    meal: dinner
+    waste: 50
+    sd: 15
+  - type: weekly_recurring # bread: every breakfast, but only Sunday breakfast is high
+    dish: bread
+    weekday: Sunday
+    meal: breakfast
+    waste: 55
+    sd: 15
+  - type: weekly_recurring # chicken: 4 dinners a week, always left on Wednesday
+    dish: chicken
+    weekday: Wednesday
+    meal: dinner
+    waste: 55
+    sd: 15
+  - type: drifting         # rice waste rises every week
+    dish: rice
+    start: 12
+    slope_per_week: 6
+    sd: 8
+  - type: serving_decay    # pasta left more when served late in the service
+    dish: pasta
+    after_minutes: 60
+    extra: 20
+  - type: pairing          # salad left more on days with eggs
+    dish: salad
+    with: eggs
+    extra: 25
+  - type: healthy
+    dish: vegetables

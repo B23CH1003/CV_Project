@@ -1,0 +1,16 @@
+dish,weekday,meal,pattern_type,effect,p_value,evidence,partner
+rice,all,all,drifting,5.98,9.068427234599464e-21,"+6.0%/week (trimmed weekly means [10.3, 17.2, 23.8, 28.0])",
+pasta,all,all,serving_decay,18.7,1.2998330025464164e-08,+18.7% after 60 min (+12.3%/hour),
+bread,Sunday,breakfast,weekly_recurring,54.2,,"mu 54.2%, R 1.00, TWCI 54.2",
+chicken,Wednesday,dinner,weekly_recurring,54.5,,"mu 54.5%, R 1.00, TWCI 54.5",
+fish,Friday,dinner,chronic,49.8,,"mu 49.8%, R 1.00, TWCI 49.8",
+salad,all,all,pairing,23.8,,41.6% with eggs vs 17.8% without (4 of 4 eggs slots raised),eggs
+soup,Thursday,lunch,weekly_recurring,31.5,,"mu 31.5%, R 0.75, TWCI 23.6",
+beans,all,all,healthy,28.3,,no recurring pattern,
+cheese,all,all,healthy,8.1,,no recurring pattern,
+dessert,all,all,healthy,16.9,,no recurring pattern,
+eggs,all,all,healthy,15.9,,no recurring pattern,
+fruit,all,all,healthy,15.9,,no recurring pattern,
+meat,all,all,healthy,13.6,,no recurring pattern,
+potato,all,all,healthy,14.3,,no recurring pattern,
+vegetables,all,all,healthy,13.3,,no recurring pattern,

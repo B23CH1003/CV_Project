@@ -1,0 +1,6 @@
+{
+  "seg_mIoU_classical": 0.034,
+  "seg_foodIoU_classical": 0.644,
+  "seg_mIoU_yolo": 0.409,
+  "seg_foodIoU_yolo": 0.829
+}

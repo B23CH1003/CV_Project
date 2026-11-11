@@ -1,0 +1,16 @@
+dish,weekday,meal,pattern_type,notes
+fish,Friday,dinner,chronic,mean 50% sd 15
+bread,Sunday,breakfast,weekly_recurring,mean 55% sd 15
+chicken,Wednesday,dinner,weekly_recurring,mean 55% sd 15
+rice,all,all,drifting,start 12% +6%/week
+pasta,all,all,serving_decay,+20% when minutes > 60
+salad,all,all,pairing,+25% when served with eggs
+vegetables,all,all,healthy,noise only
+beans,all,all,healthy,auto: no planted pattern
+cheese,all,all,healthy,auto: no planted pattern
+dessert,all,all,healthy,auto: no planted pattern
+eggs,all,all,healthy,auto: no planted pattern
+fruit,all,all,healthy,auto: no planted pattern
+meat,all,all,healthy,auto: no planted pattern
+potato,all,all,healthy,auto: no planted pattern
+soup,all,all,healthy,auto: no planted pattern
